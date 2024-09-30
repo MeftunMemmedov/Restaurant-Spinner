@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* .main{
+  clip-path: circle(49% at 66% 0);
+} */
+ 
+/* .main{
+  clip-path: circle(47% at 66% 0);
+} */
+
+.main{
+  clip-path: circle(46.3% at 70% 0);
+
+}
