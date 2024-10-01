@@ -16,5 +16,37 @@
 
 .main{
   clip-path: circle(46.3% at 70% 0);
+}
 
+.plate-on{
+  animation: plateOn 0.5s ;
+  animation-fill-mode: forwards;
+
+}
+
+.plate-off{
+  animation: plateOff 0.5s ;
+  animation-fill-mode: forwards;
+}
+
+@keyframes plateOn{
+  from{
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(-42px);
+    opacity: 1;
+  }
+}
+
+@keyframes plateOff{
+  from{
+    opacity: 1;
+    transform: translateY(-42px);
+  }
+  to{
+    transform: translateY(0);
+    opacity: 0;
+  }
 }

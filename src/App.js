@@ -46,11 +46,11 @@ function App() {
       {
         foods.length>0?
         <div className='h-[630px] border relative'>
-        <Header getFoodsByCategory={getFoodsByCategory}/>
-        <div className="main h-screen relative overflow-hidden transition duration-500" style={{backgroundColor:foodInfo?.theme}}>
-          <CircleBox rotateValue={rotateValue} foods={foods} />       
-        </div>
-          <RotateBtns rotateValue={rotateValue} setRotateValue={setRotateValue}/>
+          <Header getFoodsByCategory={getFoodsByCategory}/>
+            <div className="main h-screen relative overflow-hidden transition duration-500" style={{backgroundColor:foodInfo?.theme}}>
+              <CircleBox rotateValue={rotateValue} foods={foods} />       
+            </div>
+          <RotateBtns rotateValue={rotateValue} setRotateValue={setRotateValue} foodInfo={foodInfo}/>
           <FoodInfo />
         </div>
         :
